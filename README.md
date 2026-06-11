@@ -25,7 +25,18 @@ Below is a one-week sample from the test set, demonstrating the model's ability 
 ---
 
 ## 🧠 Explainable AI (XAI) & Data Insights
-In smart grid operations, model interpretability is just as important as accuracy. 
+In smart grid operations, model interpretability is just as important as accuracy. To contextualize the model's decision-making, the following features were analyzed:
+
+### Data Dictionary (Core Features)
+* **`nat_demand`**: National electricity demand in Megawatts (MW) **[Target Variable]**.
+* **`T2M`**: Ambient Temperature at 2 meters above ground (°C).
+* **`QV2M`**: Relative Humidity at 2 meters (%).
+* **`TQL`**: Liquid Precipitation (liters/m²).
+* **`W2M`**: Wind Speed at 2 meters (m/s).
+* *(Note: Meteorological variables are suffixed with `_toc`, `_san`, and `_dav` representing the Tocumen, Santiago, and David weather stations in Panama).*
+* **`holiday` / `school`**: Binary indicators representing public holidays and active school days.
+* **`lag_1`**: Engineered temporal feature representing the exact demand 1 hour prior.
+* **`rolling_mean_24`**: Engineered smoothing feature representing the average demand over the last 24 hours.
 
 ### 1. Feature Importance
 An analysis of the model's decision-making process reveals that our engineered temporal features (`lag_1` and `rolling_mean_24`) were the strongest predictors, followed closely by localized ambient temperature.
