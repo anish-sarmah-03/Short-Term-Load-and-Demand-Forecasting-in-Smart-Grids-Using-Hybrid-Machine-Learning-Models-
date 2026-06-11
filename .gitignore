@@ -1,0 +1,9 @@
+# Ignore the data folder (users can download the data themselves)
+data/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore Mac/Windows system files
+.DS_Store
+Thumbs.db
