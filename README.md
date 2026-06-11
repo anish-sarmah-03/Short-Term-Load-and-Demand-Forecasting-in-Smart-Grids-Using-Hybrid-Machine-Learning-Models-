@@ -12,7 +12,7 @@ Accurate load forecasting is a critical component of modern Smart Grids, enablin
 ## Visual Proof of Performance
 Below is a one-week sample from the unseen test set, demonstrating the model's ability to track complex, non-linear diurnal consumption patterns.
 
-![Actual vs Predicted Load](visualizations/actual_vs_predicted.png)
+![Actual vs Predicted Load](visualisation/actual_vs_predicted.png)
 
 ## Architecture & Methodology
 The project explores deep learning (LSTM) and gradient-boosted trees (XGBoost) before implementing a dynamic **Weighted Ensemble Optimization**.
