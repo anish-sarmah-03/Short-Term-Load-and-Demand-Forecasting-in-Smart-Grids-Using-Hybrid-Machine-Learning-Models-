@@ -20,7 +20,7 @@ The finalized Weighted Ensemble (optimized to a pure XGBoost architecture for ta
 
 Below is a one-week sample from the test set, demonstrating the model's ability to precisely track complex, non-linear diurnal consumption patterns:
 
-![Actual vs Predicted Load](visualizations/actual_vs_predicted.png)
+![Actual vs Predicted Load](visualisation/actual_vs_predicted.png)
 
 ---
 
